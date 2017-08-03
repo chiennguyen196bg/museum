@@ -624,6 +624,11 @@ function createSaveOrUpdateFunction (variablesBundle) {
 				catch (e){
 					// do not care
 				}
+				// TODO
+				// Deal with missing Dates HERE
+				// Use hour:min:sec as flag to mark that what is missing in the given date
+				// Ex: hour = 1 to mark that the input is missing Date
+				// Ex: hour = 2 to mark that the input is missing Date & Month
 				objectChild(objectInstance, element.schemaProp)[element.name] = value;
 
 				// Update Auto Completion
